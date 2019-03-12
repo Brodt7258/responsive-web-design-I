@@ -122,17 +122,33 @@ header div button {
 
 .column-container {
   display: flex;
+  justify-content: space-between;
 }
 
-.column-container .column-2, .column-container .column-3 {
+.column-3 {
+  width: 31.15%;
+}
+
+.column-2, .column-3 {
   line-height: 1.125rem;
 }
 
 .banner {
-  margin: 30px 0;
+  margin: 30px 0 25px 0;
   width: 100%;
 }
 
 .banner img {
   width: 100%;
+}
+
+.contact-info {
+  margin-top: 35px;
+  border-top: 2px black solid;
+  padding-top: 35px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 38px;
 }
