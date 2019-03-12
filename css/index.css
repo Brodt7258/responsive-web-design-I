@@ -152,3 +152,33 @@ footer {
   text-align: center;
   margin-top: 38px;
 }
+
+@media(max-width: 4000px) {
+  .container {
+    width: 760px;
+  }
+
+  nav {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  nav img {
+    margin: 0;
+  }
+
+  nav div {
+    width: 97.5%;
+    margin-top: 37px;
+    padding-right: 4.3%;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header div {
+    margin: auto;
+  }
+}
