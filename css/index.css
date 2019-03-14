@@ -153,6 +153,7 @@ footer {
   margin-top: 38px;
 }
 
+/*  Tablet View  */
 @media(max-width: 4000px) {
   .container {
     width: 760px;
@@ -180,5 +181,17 @@ footer {
 
   header div {
     margin: auto;
+  }
+
+  .column-2 {
+    padding: 0 1.25% 0 1.5%;
+  }
+
+  .column-3 {
+    padding: 0 1% 0 2%;
+  }
+
+  .contact-info {
+    margin-left: 1%;
   }
 }
