@@ -183,15 +183,19 @@ footer {
     margin: auto;
   }
 
+  .column-container {
+    padding: 0 1.5%;
+  }
+
   .column-2 {
-    padding: 0 1.25% 0 1.5%;
+    width: 48%;
   }
 
   .column-3 {
-    padding: 0 1% 0 2%;
+    width: 28%;
   }
 
   .contact-info {
-    margin-left: 1%;
+    margin-left: 1.5%;
   }
 }
