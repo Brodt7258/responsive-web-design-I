@@ -1,3 +1,274 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 880px;
+  margin: auto;
+}
+
+nav {
+  padding-top: 27px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav div {
+  padding-top: 3px;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+nav div a {
+  text-decoration: none;
+  color: #888;
+  transition-duration: 0.35s;
+}
+
+nav div a:hover {
+  color: tomato;
+}
+
+nav img {
+  margin-left: 10.4%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+  padding-bottom: 75px;
+  border-bottom: 2px solid black;
+  margin-bottom: 36px;
+}
+
+header div {
+  margin-left: 14.4%;
+  margin-top: 6%;
+}
+
+header div h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 8.5%;
+}
+
+header div button {
+  display: block;
+  margin: auto;
+  width: 58%;
+  font-size: 1.03rem;
+  padding: 6px 0px 5px 0px;
+  background: white;
+  border: 1px solid black;
+  transition-duration: 0.35s;
+}
+
+header div button:hover {
+  color: tomato;
+  background: #555;
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-3 {
+  width: 31.15%;
+}
+
+.column-2, .column-3 {
+  line-height: 1.125rem;
+}
+
+.banner {
+  margin: 30px 0 25px 0;
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.contact-info {
+  margin-top: 35px;
+  border-top: 2px black solid;
+  padding-top: 35px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 38px;
+}
+
+/*  Tablet View  */
+@media(max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+
+  nav {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  nav img {
+    margin: 0;
+  }
+
+  nav div {
+    width: 97.5%;
+    margin-top: 37px;
+    padding-right: 4.3%;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header div {
+    margin: auto;
+  }
+
+  .column-container {
+    padding: 0 1.5%;
+  }
+
+  .column-2 {
+    width: 48%;
+  }
+
+  .column-3 {
+    width: 28%;
+  }
+
+  .contact-info {
+    margin-left: 1.5%;
+  }
+}
+
+/*  Mobile View  */
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column-reverse;
+    padding-top: 20px;
+  }
+
+  nav img {
+    margin: 0;
+  }
+
+  nav div {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-top: 1.25rem;
+  }
+
+  nav div a {
+    text-align: center;
+    border-top: 1px solid black;
+    font-size: 1.25rem;
+    padding: 1.25rem 0;
+  }
+
+  header {
+    padding-top: 3rem;
+    margin: 0 4%;
+    margin-bottom: 2rem;
+  }
+  header img {
+    display: none;
+  }
+
+  header div {
+    margin: auto;
+  }
+
+  .column-container {
+    flex-direction: column;
+    padding: 0 4%;
+  }
+
+  .column-2, .column-3 {
+    margin: 1.5rem 0;
+    width: 100%;
+  }
+
+  .banner {
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0 4%;
+  }
+  
+  .contact-info {
+    margin: 0 4%;
+  }
+}
